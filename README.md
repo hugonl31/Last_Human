@@ -46,9 +46,9 @@ Every shot and GIF here was made on **[Vectrex_EMU](https://github.com/hugonl31/
 
 **The same two fights at full size, with sound** (press play):
 
-https://github.com/user-attachments/assets/e7de0e81-f87a-4ee3-b5ff-c61b148093c0
-
 https://github.com/user-attachments/assets/4b206af0-47f6-42b7-ad2d-a2391636e614
+
+https://github.com/user-attachments/assets/e7de0e81-f87a-4ee3-b5ff-c61b148093c0
 
 **With the overlay**
 
