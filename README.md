@@ -44,6 +44,12 @@ Every shot and GIF here was made on **[Vectrex_EMU](https://github.com/hugonl31/
 <sub>Played live: the Overseer on the bare tube, and the Guardian with the overlay, both in evening light.</sub>
 </p>
 
+**The same two fights at full size, with sound** (press play):
+
+https://github.com/user-attachments/assets/e7de0e81-f87a-4ee3-b5ff-c61b148093c0
+
+https://github.com/user-attachments/assets/4b206af0-47f6-42b7-ad2d-a2391636e614
+
 **With the overlay**
 
 | | |
@@ -82,6 +88,10 @@ The stills are staged: test cartridges freeze a composed moment, drawn by the ga
 <img src="img/art/cart_render_back.jpg" width="400" alt="The Steel Siege cartridge from the other end: the gold edge fingers through the clear shell, the label on top"><br>
 <sub>The cartridge board (KiCad 3D render) and the finished cartridge from both ends.</sub>
 </p>
+
+**The board at full size** (press play):
+
+https://github.com/user-attachments/assets/a718eb27-3821-4aa5-8db4-0ca8c197b10e
 
 * **Pure Vectrex.** The game runs on the console's own 6809 at 1.5 MHz with its 1 KB of RAM. No UVMC2, PiTrex or
   other extra hardware: it plugs into any Vectrex like a 1982 cartridge.
