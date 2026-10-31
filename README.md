@@ -68,6 +68,10 @@ Every shot and GIF here was made on **[Vectrex_EMU](https://github.com/hugonl31/
 <sub>The GIFs are real play by the game's balancing bot.
 The stills are staged: test cartridges freeze a composed moment, drawn by the game's own code.</sub>
 
+**Full size:** the [release](https://github.com/hugonl31/Steel_Siege/releases/latest) has all 16 screenshots at
+1493 x 1865 px (`Steel_Siege_screenshots.zip`), both gameplay clips as videos with the game's sound
+(`Steel_Siege_guardian.mp4`, `Steel_Siege_overseer.mp4`) and the board turning (`Steel_Siege_board_spin.mp4`).
+
 ---
 
 ## The cartridge
