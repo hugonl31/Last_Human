@@ -29,8 +29,9 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.0](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
-(`Last_Human.bin`) and the screen overlay (`Last_Human_overlay.png`). To try it right away, the release also has
+**[Last Human v1.2](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+(`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`, see
+[below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
 
@@ -44,6 +45,27 @@ switching and a place for the DS2431. It has Gerbers ready to order from a board
 
 **About the emulator:** [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) has the full story: the real tube
 look, overlays, the settings, online play, and newer versions.
+
+## UVMC2 edition
+
+Last Human comes in two editions. The 6809 cartridge is the purist version: the game as it runs on a stock
+Vectrex, nothing added. The UVMC2 edition (`Last_Human_UVMC2.um2`) is for the Ultimate Vectrex Multicart 2: the
+same game, written again in C, running natively on the cartridge's RP2350 processor. It plays the same game frame
+for frame (checked against the 6809 version on more than 165,000 frames), and adds what the 6809 has no room for:
+
+* **Cinematics and music:** short animated scenes with their own music when an act is cleared, when a boss arrives
+  and when it is destroyed, when an arena is complete, at game over, when captives are reunited, and the
+  cliffhanger.
+* **A steady frame rate:** about 47 frames a second even in the busiest levels, where the 6809 version drops to
+  35 to 38. (47 is set by the UVMC2 SDK's frame pacing.)
+* **Saves on the SD card:** high scores, the Arena 2 unlock and the options.
+* **Saved calibration:** hold buttons 2 and 3 while you launch the game to open the UVMC2 calibration screen.
+  Every UVMC2 game uses the same calibration.
+* **2-player co-op:** press button 1 on the title to choose two players. Player 2 plays on the second controller.
+  Each player has their own lives, bombs and power-ups, and the score is the team's. Co-op can also be played
+  online with [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU).
+
+Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu. Vectrex_EMU runs it too.
 
 ## Screenshots
 
@@ -134,7 +156,7 @@ https://github.com/user-attachments/assets/a718eb27-3821-4aa5-8db4-0ca8c197b10e
 
 ## Contents
 
-[Download](#download) · [Screenshots](#screenshots) · [The cartridge](#the-cartridge) · [The robots](#the-robots) · [Features](#features) · [Gameplay](#gameplay) · [The cast](#the-cast) ·
+[Download](#download) · [UVMC2 edition](#uvmc2-edition) · [Screenshots](#screenshots) · [The cartridge](#the-cartridge) · [The robots](#the-robots) · [Features](#features) · [Gameplay](#gameplay) · [The cast](#the-cast) ·
 [The bosses](#the-bosses) · [How the robots think](#how-the-robots-think) · [Under the hood](#under-the-hood) ·
 [Overlay artwork](overlay/README.md)
 
