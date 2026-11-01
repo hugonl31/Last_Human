@@ -67,6 +67,10 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
 
 Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu. Vectrex_EMU runs it too.
 
+<p align="center"><img src="img/gif/coop.gif" width="380" alt="Two players on the UVMC2 edition: the cages open, both ships fire into the robots of level 4"><br>
+<sub>Two players on the UVMC2 edition. The whole clip with sound, levels 4 to 6:
+<a href="https://github.com/hugonl31/Last_Human/releases/download/v1.2/Last_Human_UVMC2_coop.mp4">Last_Human_UVMC2_coop.mp4</a> (66 s).</sub></p>
+
 ## Screenshots
 
 Every shot and GIF here was made on **[Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU)**, the Vectrex emulator with the real tube look: phosphor afterglow, the curved glass, room light and the overlay.
