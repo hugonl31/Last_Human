@@ -1,4 +1,4 @@
-"""make_sketches.py - the Steel Siege page's robot sketches, drawn from the game's own vector shapes (tools/genart.py).
+"""make_sketches.py - the Last Human page's robot sketches, drawn from the game's own vector shapes (tools/genart.py).
 
 Two pictures a robot: a pencil design sheet on graph paper (img/sketch/NAME.svg) and the shape as it glows on the
 Vectrex screen (img/screen/NAME.svg).    python site/make_sketches.py

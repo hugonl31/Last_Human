@@ -1,7 +1,7 @@
-# Steel Siege overlay: template and brief
+# Last Human overlay: template and brief
 
 A Vectrex screen overlay is a printed, partly see-through plastic sheet laid over the tube. This folder has the
-exact layout of the Steel Siege overlay, so new artwork can be painted for it. The main page
+exact layout of the Last Human overlay, so new artwork can be painted for it. The main page
 ([../README.md](../README.md)) shows the game, its robots, its screenshots and the box-art style.
 
 ## The sheet
@@ -22,11 +22,11 @@ exact layout of the Steel Siege overlay, so new artwork can be painted for it. T
 | [mask_4x.png](mask_4x.png) | White = printed artwork, black = see-through. |
 | [finish.py](finish.py) | `python finish.py ART.png [OUT.png]` crops and scales finished artwork to the sheet, cuts the window and the boxes exactly, and puts the coloured filters back. |
 | [make_template.py](make_template.py), [layout5.json](layout5.json) | How the template is made: the tube outline and the HUD boxes, measured from the game running on the emulator. |
-| [current_overlay.png](current_overlay.png) | **The final overlay** (1109 x 1418 px): the arena city at night, the STEEL SIEGE logo, the five HUD boxes. |
+| [current_overlay.png](current_overlay.png) | **The final overlay** (1109 x 1418 px): the arena city at night, the LAST HUMAN logo, the five HUD boxes. |
 
 ## Brief
 
-Paint arcade-cabinet side art for **STEEL SIEGE**, a Vectrex arena shooter (2084: the robots have turned on their
+Paint arcade-cabinet side art for **LAST HUMAN**, a Vectrex arena shooter (2084: the robots have turned on their
 makers; you are a lone fighter ship saving the last humans).
 
 * **Style:** 1980s arcade cabinet art and comic-book / anime illustration: bold ink outlines, rich colour, dramatic
@@ -37,7 +37,7 @@ makers; you are a lone fighter ship saving the last humans).
   Overseer, Hulks, Brains, Cross walkers, Tanks, the Hydra. They loom over the corners, their arms reaching down the
   sides. Below them: a landscape, a city skyline or arena stands with a crowd, floodlights, laser beams, explosions. A
   night sky with stars and planets at the top.
-* **Title marquee at the bottom:** a great-looking **STEEL SIEGE** logo in the bottom band, where there is the most
+* **Title marquee at the bottom:** a great-looking **LAST HUMAN** logo in the bottom band, where there is the most
   room, with the background artwork continuing behind it, not on a plain plate.
 * **Colour:** darker tones overall, with bright highlights for depth and 3D shading. Next to the window keep it fairly
   dark, so the bright game lines stand out.

@@ -1,4 +1,4 @@
-"""paint.py - a small airbrush painter for the Steel Siege page's 80s box art (numpy + PIL + scipy).
+"""paint.py - a small airbrush painter for the Last Human page's 80s box art (numpy + PIL + scipy).
 
 Shapes are masks; solid() shades a mask as a smooth 3D object from its blurred height (diffuse light, a specular
 highlight, optional chrome sky reflection, rim light), the way an airbrushed box painting reads. Backdrops: an 80s

@@ -1,26 +1,37 @@
-<p align="center"><img src="img/art/box_front.png" width="560" alt="Steel Siege box art: the Guardian looms over the arena, Cross walkers march across the grid and the fighter fires"></p>
+<p align="center"><img src="img/art/box_front.png" width="560" alt="Last Human box art: the Guardian looms over the arena, Cross walkers march across the grid and the fighter fires"></p>
 
-<h1 align="center">STEEL SIEGE</h1>
+<h1 align="center">LAST HUMAN</h1>
 <p align="center"><b>An arena shooter for the Vectrex · 70 levels · 2 arenas · 4 bosses</b><br>
 <sub>6809 assembly · 64 KiB bank-switched cartridge · optional DS2431 save chip</sub></p>
 
 ---
 
-**2084. The machines built to serve us run the Arena now.** The last humans are herded inside, and the robots come
-for them in waves. One fighter is left. Get the humans out, break the waves, and reach the **Overseer** - the machine
-at the centre of it all. Beat it, and what is left of the robots falls back to **The Core**, the factory that builds
-them. Follow them in.
+<p align="center"><b><i>The machines took everyone. They missed one.</i></b></p>
 
-Steel Siege started as a love letter to Williams' *Robotron: 2084* and Thomas Sontowski's *Robot Arena*, and grew
+The war is over, and the machines won it. They took the cities, and then the people in them. Every human left
+alive is a captive now, kept for one thing: the games.
+
+Deep in the machine world the robots run their arenas, dark grids of light where captives are thrown in and hunted
+for sport while the machines watch. Nobody has ever walked out of one.
+
+You are the last free human, at the controls of a stolen fighting rig. You break into the games. You kill the robots
+before they reach the humans, and you pull the captives out, one person taken back at a time.
+
+**Arena 1** runs through the hunters and the factory to the **Overseer**, the machine that runs the games.
+**Arena 2** goes deeper into the machine world: through the Foundry and the Wires, down to the **Heart**.
+
+Clear the last arena and the games are over. **Humanity takes the reins once more.**
+
+Last Human started as a love letter to Williams' *Robotron: 2084* and Thomas Sontowski's *Robot Arena*, and grew
 into a full campaign built around what the Vectrex does best: sharp, bright vectors moving fast. Every robot has its
 own behaviour, every act changes the rules, and the difficulty is something you choose, not something that just
 happens to you.
 
 ## Download
 
-**[Steel Siege v1.0](https://github.com/hugonl31/Steel_Siege/releases/latest)**: the 64 KB cartridge ROM
-(`Steel_Siege.bin`) and the screen overlay (`Steel_Siege_overlay.png`). To try it right away, the release also has
-[Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Steel Siege and its overlay
+**[Last Human v1.0](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+(`Last_Human.bin`) and the screen overlay (`Last_Human_overlay.png`). To try it right away, the release also has
+[Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
 
 On a real Vectrex the ROM needs a cartridge with a 64 KB EPROM banked by PB6, or a flash cartridge that supports
@@ -29,7 +40,7 @@ it. Saves need the optional DS2431 chip; without it the game runs the same, with
 **Make your own cartridge:** the [64K board](https://github.com/hugonl31/Vectrex_Cart_PCB/tree/main/boards/v1_27c512_64k)
 on [Vectrex_Cart_PCB](https://github.com/hugonl31/Vectrex_Cart_PCB) is made for this: a 27C512 EPROM, PB6 bank
 switching and a place for the DS2431. It has Gerbers ready to order from a board maker, the parts list, and a
-3D-printed shell. Burn `Steel_Siege.bin` into the EPROM and it plugs into any Vectrex.
+3D-printed shell. Burn `Last_Human.bin` into the EPROM and it plugs into any Vectrex.
 
 **About the emulator:** [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) has the full story: the real tube
 look, overlays, the settings, online play, and newer versions.
@@ -74,18 +85,18 @@ https://github.com/user-attachments/assets/e7de0e81-f87a-4ee3-b5ff-c61b148093c0
 <sub>The GIFs are real play by the game's balancing bot.
 The stills are staged: test cartridges freeze a composed moment, drawn by the game's own code.</sub>
 
-**Full size:** the [release](https://github.com/hugonl31/Steel_Siege/releases/latest) has all 16 screenshots at
-1493 x 1865 px (`Steel_Siege_screenshots.zip`), both gameplay clips as videos with the game's sound
-(`Steel_Siege_guardian.mp4`, `Steel_Siege_overseer.mp4`) and the board turning (`Steel_Siege_board_spin.mp4`).
+**Full size:** the [release](https://github.com/hugonl31/Last_Human/releases/latest) has all 16 screenshots at
+1493 x 1865 px (`Last_Human_screenshots.zip`), both gameplay clips as videos with the game's sound
+(`Last_Human_guardian.mp4`, `Last_Human_overseer.mp4`) and the board turning (`Last_Human_board_spin.mp4`).
 
 ---
 
 ## The cartridge
 
 <p align="center">
-<img src="img/pcb/board_spin.gif" width="400" alt="The Steel Siege cartridge board turning: the W27C512 EPROM, the gold STEEL SIEGE title on the front, the Vectrex logo on the back">
-<img src="img/art/cart_render.jpg" width="400" alt="The Steel Siege cartridge: a clear amber shell with the STEEL SIEGE label, the board visible inside"><br>
-<img src="img/art/cart_render_back.jpg" width="400" alt="The Steel Siege cartridge from the other end: the gold edge fingers through the clear shell, the label on top"><br>
+<img src="img/pcb/board_spin.gif" width="400" alt="The Last Human cartridge board turning: the W27C512 EPROM, the gold LAST HUMAN title on the front, the Vectrex logo on the back">
+<img src="img/art/cart_render.jpg" width="400" alt="The Last Human cartridge: a clear amber shell with the LAST HUMAN label, the board visible inside"><br>
+<img src="img/art/cart_render_back.jpg" width="400" alt="The Last Human cartridge from the other end: the gold edge fingers through the clear shell, the label on top"><br>
 <sub>The cartridge board (KiCad 3D render) and the finished cartridge from both ends.</sub>
 </p>
 
@@ -98,7 +109,7 @@ https://github.com/user-attachments/assets/a718eb27-3821-4aa5-8db4-0ca8c197b10e
 * **64 KB, full.** The board carries one W27C512 EPROM, a resistor and a capacitor, plus an optional DS2431 for the
   saves. The VIA's PB6 line drives A15 and switches between the two 32 KB banks. Of the 65,536 bytes, 251 are free
   (99.6 % used): there is no room for another robot, boss or arena.
-* **The board:** 54 × 66 mm, two layers, gold (ENIG) edge fingers. The STEEL SIEGE title on the front and the Vectrex
+* **The board:** 54 × 66 mm, two layers, gold (ENIG) edge fingers. The LAST HUMAN title on the front and the Vectrex
   logo on the back are openings in the solder mask, so they come out in gold. The board is based on the open
   [Vectrex_Cart_PCB](https://github.com/hugonl31/Vectrex_Cart_PCB) design.
 
@@ -318,4 +329,4 @@ instant.
 
 The exact layout of the screen overlay, with a brief for new artwork: [overlay/](overlay/README.md).
 
-<p align="center"><sub>Steel Siege · a Vectrex homebrew by Hugo Bokhorst · 2026</sub></p>
+<p align="center"><sub>Last Human · a Vectrex homebrew by Hugo Bokhorst · 2026</sub></p>

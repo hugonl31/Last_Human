@@ -1,4 +1,4 @@
-"""cards.py - Steel Siege robot portraits 'as they would look in real life', 80s box-art style (paint.py, boxart.py).
+"""cards.py - Last Human robot portraits 'as they would look in real life', 80s box-art style (paint.py, boxart.py).
 
     python site/cards.py [key ...]        -> site/img/art/card_KEY.png
 """

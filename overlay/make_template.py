@@ -1,4 +1,4 @@
-"""make_template.py - Steel Siege overlay TEMPLATE for an artist / image generator (2026-10-28).
+"""make_template.py - Last Human overlay TEMPLATE for an artist / image generator (2026-10-28).
 
 The overlay sheet is 162 x 207 mm (846 x 1080 px in the emulator). Outputs (this folder, each at 1x and 4x):
   template_guides*.png  - labelled: artwork area, play window, HUD boxes with their names and colours, the glass edge

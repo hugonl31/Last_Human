@@ -1,5 +1,5 @@
 """finish.py ART.png [OUT.png] - turn artwork made on the template (by an artist or an image generator) into the
-Steel Siege overlay: scaled to the sheet (846 x 1080, cropped to 162:207 if needed), the play window and the HUD boxes
+Last Human overlay: scaled to the sheet (846 x 1080, cropped to 162:207 if needed), the play window and the HUD boxes
 cut out exactly (whatever was painted there is dropped), the see-through colour filters put back (field blue, score
 gold, level white, lives red, bombs green, cards white), the sheet's rounded corners. Default OUT: overlay.png
 is NOT touched - writes ART_overlay.png next to ART unless OUT is given."""

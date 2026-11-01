@@ -1,4 +1,4 @@
-"""boxart.py - Steel Siege 'as it would look in real life': 80s cartridge-box style paintings (paint.py).
+"""boxart.py - Last Human 'as it would look in real life': 80s cartridge-box style paintings (paint.py).
 
     python site/boxart.py            -> site/img/art/*.png
 """
@@ -154,7 +154,7 @@ def box_front(path):
     for i, c in enumerate(('#ffd23f', '#ff8a1f', '#ff3d2e', '#c2185b')):    # (the stripes across the top)
         y = 18 + i * 11
         a.fill(a.rect(0, y, W, y + 7), C(c))
-    a.chrome_title('STEEL SIEGE', W / 2, 150, 150, shear=-0.22, sx=0.92, depth=12)
+    a.chrome_title('LAST HUMAN', W / 2, 150, 150, shear=-0.22, sx=0.92, depth=12)
     sw, sh = W - 70, 900
     scene = scene_guardian(sw, sh, rnd)
     x0, y0 = 35, 250
