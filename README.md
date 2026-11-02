@@ -29,9 +29,9 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.2](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
-(`Last_Human.bin`) and the screen overlay (`Last_Human_overlay.png`). The UVMC2 edition is coming back soon (see
-[below](#uvmc2-edition)). To try it right away, the release also has
+**[Last Human v1.3](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+(`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
+see [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
 
@@ -48,18 +48,16 @@ look, overlays, the settings, online play, and newer versions.
 
 ## UVMC2 edition
 
-**Coming back soon.** The first UVMC2 build is withdrawn: some of its text came out garbled or stepped on real
-consoles. Its drawing is being rewritten the UVMC2 SDK's way, and it returns in a new release once every screen is
-clean.
+**Back in v1.3.** Its drawing is rewritten the UVMC2 SDK's way: clean text, closed boxes and the same robots as
+the 6809 version.
 
 Last Human comes in two editions. The 6809 cartridge is the purist version: the game as it runs on a stock
 Vectrex, nothing added. The UVMC2 edition (`Last_Human_UVMC2.um2`) is for the Ultimate Vectrex Multicart 2: the
 same game, written again in C, running natively on the cartridge's RP2350 processor. It plays the same game frame
 for frame (checked against the 6809 version on more than 165,000 frames), and adds what the 6809 has no room for:
 
-* **Cinematics and music:** short animated scenes with their own music when an act is cleared, when a boss arrives
-  and when it is destroyed, when an arena is complete, at game over, when captives are reunited, and the
-  cliffhanger.
+* **Cinematics and music:** short animated story scenes with their own music at the big moments. No spoilers here:
+  play it and see.
 * **A steady frame rate:** about 47 frames a second even in the busiest levels, where the 6809 version drops to
   35 to 38. (47 is set by the UVMC2 SDK's frame pacing.)
 * **Saves on the SD card:** high scores, the Arena 2 unlock and the options.
@@ -69,7 +67,7 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
   Each player has their own lives, bombs and power-ups, and the score is the team's. Co-op can also be played
   online with [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU).
 
-When it is back: copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu.
+Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu.
 Vectrex_EMU runs it too.
 
 <p align="center"><img src="img/gif/coop.gif" width="380" alt="Two players on the UVMC2 edition: the cages open, both ships fire into the robots of level 4"><br>
