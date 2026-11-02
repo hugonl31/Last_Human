@@ -30,7 +30,7 @@ happens to you.
 ## Download
 
 **[Last Human v1.2](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
-(`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`, see
+(`Last_Human.bin`) and the screen overlay (`Last_Human_overlay.png`). The UVMC2 edition is coming back soon (see
 [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
@@ -47,6 +47,10 @@ switching and a place for the DS2431. It has Gerbers ready to order from a board
 look, overlays, the settings, online play, and newer versions.
 
 ## UVMC2 edition
+
+**Coming back soon.** The first UVMC2 build is withdrawn: some of its text came out garbled or stepped on real
+consoles. Its drawing is being rewritten the UVMC2 SDK's way, and it returns in a new release once every screen is
+clean.
 
 Last Human comes in two editions. The 6809 cartridge is the purist version: the game as it runs on a stock
 Vectrex, nothing added. The UVMC2 edition (`Last_Human_UVMC2.um2`) is for the Ultimate Vectrex Multicart 2: the
@@ -65,7 +69,8 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
   Each player has their own lives, bombs and power-ups, and the score is the team's. Co-op can also be played
   online with [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU).
 
-Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu. Vectrex_EMU runs it too.
+When it is back: copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu.
+Vectrex_EMU runs it too.
 
 <p align="center"><img src="img/gif/coop.gif" width="380" alt="Two players on the UVMC2 edition: the cages open, both ships fire into the robots of level 4"><br>
 <sub>Two players on the UVMC2 edition. The whole clip with sound, levels 4 to 6:
