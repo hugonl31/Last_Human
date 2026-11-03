@@ -29,7 +29,7 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.3.5](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+**[Last Human v1.3.6](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
 (`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
 see [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
@@ -70,10 +70,10 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
 Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu.
 Vectrex_EMU runs it too.
 
-**Resetting every few seconds?** On some consoles the UVMC2 edition restarts by itself on the title. The test build
-[v1.3.5-resetcount](https://github.com/hugonl31/Last_Human/releases/tag/v1.3.5-resetcount) may fix it: the UVMC2
-SDK's reset-button watch, the likely cause, only counts there and never restarts the game. Its on-screen **RST**
-counter shows whether that was it; please report what you see.
+**Resetting every few seconds?** On at least one console the UVMC2 edition restarted by itself on the title.
+Since v1.3.6 the UVMC2 SDK's watch for the console's RESET button, the likely cause, is switched off: the game should
+now stay up (please tell us if it does not). The console's RESET button then no longer restarts the game; switch the
+Vectrex off and on instead.
 
 <p align="center"><img src="img/gif/coop.gif" width="380" alt="Two players on the UVMC2 edition: the cages open, both ships fire into the robots of level 4"><br>
 <sub>Two players on the UVMC2 edition. The whole clip with sound, levels 4 to 6:
