@@ -29,7 +29,7 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.3.6](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+**[Last Human v1.3.7](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
 (`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
 see [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
@@ -48,8 +48,10 @@ look, overlays, the settings, online play, and newer versions.
 
 ## UVMC2 edition
 
-**Back in v1.3.** Its drawing is rewritten the UVMC2 SDK's way: clean text, closed boxes and the same robots as
-the 6809 version.
+**New in v1.3.7: it draws exactly like the cartridge.** The game's own 6809 drawing code runs on the UVMC2, so the
+Vectrex gets the very same register writes as from the 6809 cartridge, at the same moments: text, boxes and shapes
+look as they do on the cartridge, on every console. (It reads the console's own BIOS at start-up for that; if the
+read fails it draws the older way.)
 
 Last Human comes in two editions. The 6809 cartridge is the purist version: the game as it runs on a stock
 Vectrex, nothing added. The UVMC2 edition (`Last_Human_UVMC2.um2`) is for the Ultimate Vectrex Multicart 2: the
@@ -58,11 +60,12 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
 
 * **Cinematics and music:** short animated story scenes with their own music at the big moments. No spoilers here:
   play it and see.
-* **A steady frame rate:** about 47 frames a second even in the busiest levels, where the 6809 version drops to
-  35 to 38. (47 is set by the UVMC2 SDK's frame pacing.)
+* **A steady frame rate:** 50 frames a second in play, and about 48 even in the busiest levels, where the 6809
+  version drops to about 43. The game logic runs on the RP2350, so the Vectrex only draws.
 * **Saves on the SD card:** high scores, the Arena 2 unlock and the options.
-* **Saved calibration:** hold buttons 2 and 3 while you launch the game to open the UVMC2 calibration screen.
-  Every UVMC2 game uses the same calibration.
+* **Saved calibration:** hold buttons 2 and 3 while you launch the game: first the UVMC2 calibration screen (every
+  UVMC2 game uses it), then the game's own CALIBRATION screen (ZERO REF: until the ships close), saved with the
+  scores.
 * **2-player co-op:** press button 1 on the title to choose two players. Player 2 plays on the second controller.
   Each player has their own lives, bombs and power-ups, and the score is the team's. Co-op can also be played
   online with [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU).
