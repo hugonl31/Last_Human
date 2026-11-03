@@ -70,6 +70,11 @@ for frame (checked against the 6809 version on more than 165,000 frames), and ad
 Copy `Last_Human_UVMC2.um2` to the UVMC2's SD card and start it from the cartridge's menu.
 Vectrex_EMU runs it too.
 
+**Resetting every few seconds?** On some consoles the UVMC2 edition restarts by itself on the title. The test build
+[v1.3.5-resetcount](https://github.com/hugonl31/Last_Human/releases/tag/v1.3.5-resetcount) may fix it: the UVMC2
+SDK's reset-button watch, the likely cause, only counts there and never restarts the game. Its on-screen **RST**
+counter shows whether that was it; please report what you see.
+
 <p align="center"><img src="img/gif/coop.gif" width="380" alt="Two players on the UVMC2 edition: the cages open, both ships fire into the robots of level 4"><br>
 <sub>Two players on the UVMC2 edition. The whole clip with sound, levels 4 to 6:
 <a href="https://github.com/hugonl31/Last_Human/releases/download/v1.2/Last_Human_UVMC2_coop.mp4">Last_Human_UVMC2_coop.mp4</a> (66 s).</sub></p>
