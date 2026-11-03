@@ -26,7 +26,8 @@ The likely cause is the UVMC2 SDK's reset-button watch, found by elimination; it
 - Core 1 reads VIA DDRB between frames. Each frame list sets DDRB=0x9F.
 - DDRB==0 counts as a RESET press. After 1 s the SDK restarts the game (`rom_reboot`).
 - Some consoles probably read 0 there without anyone pressing RESET.
-- Upstream SDK v1.4.6/v1.4.7 changed reset-button handling.
+- Upstream SDK v1.4.6/v1.4.7 do not fix this (checked their CHANGELOG): v1.4.6 only sets DDRB before the first frame's read
+  (a reset that opened the calibration wizard), v1.4.7 only shows RESETTING during the 1 s wait.
 
 **What the emulator showed** (Vectrex Studio's Uvm2System, 1400 frames; runner `/mnt/g/AI/VectrexStudio/src/ide/frontend/tools/lh_run.mjs`, env `PROBE=1`):
 
@@ -60,7 +61,7 @@ Next step depends on the answer:
 
 - **It keeps running and RST climbs:** the watch is confirmed as the cause. Make v1.3.6 in one of two ways:
   - Build with `EXTRA=-DUVM2_NO_RESET_BUTTON`. A test build of this exists: `build/uvmc2_diag/lasthuman_v1.3.5_noresetwatch.um2`.
-  - Or rebuild on SDK v1.4.7. Use a separate copy of the starter kit, re-apply the pad2 patch, and run `make check`.
+  - (Rebuilding on SDK v1.4.7 is not a fix: it keeps the same DDRB check. At most it shows RESETTING on screen.)
 - **It still resets:** the cause is something else. Look at `speed.txt`.
   - Also ask whether other SDK games reset on their console too.
   - Suspects: power or brown-out, the SD card, the cartridge's own firmware.
