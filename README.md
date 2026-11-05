@@ -29,11 +29,15 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.3.7](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+**[Last Human v1.3.8](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
 (`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
 see [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
+
+**New in v1.3.8:** a faster title screen, the stick chooses the difficulty (left / right) and the arena (up / down),
+and a TEXT setting on the CALIBRATION screen (button 1 on the title) that straightens the small text on your
+console. Its default already gives straight text on most Vectrexes.
 
 On a real Vectrex the ROM needs a cartridge with a 64 KB EPROM banked by PB6, or a flash cartridge that supports
 it. Saves need the optional DS2431 chip; without it the game runs the same, without saves.
@@ -48,7 +52,7 @@ look, overlays, the settings, online play, and newer versions.
 
 ## UVMC2 edition
 
-**New in v1.3.7: it draws exactly like the cartridge.** The game's own 6809 drawing code runs on the UVMC2, so the
+**It draws exactly like the cartridge.** The game's own 6809 drawing code runs on the UVMC2, so the
 Vectrex gets the very same register writes as from the 6809 cartridge, at the same moments: text, boxes and shapes
 look as they do on the cartridge, on every console. (It reads the console's own BIOS at start-up for that; if the
 read fails it draws the older way.)
@@ -56,15 +60,16 @@ read fails it draws the older way.)
 Last Human comes in two editions. The 6809 cartridge is the purist version: the game as it runs on a stock
 Vectrex, nothing added. The UVMC2 edition (`Last_Human_UVMC2.um2`) is for the Ultimate Vectrex Multicart 2: the
 same game, written again in C, running natively on the cartridge's RP2350 processor. It plays the same game frame
-for frame (checked against the 6809 version on more than 165,000 frames), and adds what the 6809 has no room for:
+for frame (checked against the 6809 version on more than 170,000 frames), and adds what the 6809 has no room for:
 
 * **Cinematics and music:** short animated story scenes with their own music at the big moments. No spoilers here:
   play it and see.
-* **A steady frame rate:** 50 frames a second in play, and about 48 even in the busiest levels, where the 6809
+* **A steady frame rate:** 50 frames a second in play and on every title page, and about 48 even in the busiest levels, where the 6809
   version drops to about 43. The game logic runs on the RP2350, so the Vectrex only draws.
 * **Saves on the SD card:** high scores, the Arena 2 unlock and the options.
 * **Saved calibration:** hold buttons 2 and 3 while you launch the game: first the UVMC2 calibration screen (every
-  UVMC2 game uses it), then the game's own CALIBRATION screen (ZERO REF: until the ships close), saved with the
+  UVMC2 game uses it), then the game's own CALIBRATION screen (up / down ZERO REF: until the ships close; left / right TEXT:
+  until the small text stands straight), saved with the
   scores.
 * **2-player co-op:** press button 1 on the title to choose two players. Player 2 plays on the second controller.
   Each player has their own lives, bombs and power-ups, and the score is the team's. Co-op can also be played
