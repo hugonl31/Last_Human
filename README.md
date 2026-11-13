@@ -29,17 +29,17 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.3.9](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+**[Last Human v1.4.0](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
 (`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
 see [below](#uvmc2-edition)). To try it right away, the release also has
 [Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
 already in it.
 
-**New in v1.3.9:** calibrated for a standard Vectrex out of the box: the ship closes and the small text stands
-straight with the defaults. Your own console may want a step either way on the CALIBRATION screen (button 1 on the
+**New in v1.4.0:** both editions start at ZERO REF +03 and TEXT +00, the values a zero-reference test cartridge drew
+sharpest on a real Vectrex. Your own console may want a step either way on the CALIBRATION screen (button 1 on the
 title): up / down ZERO REF, left / right TEXT.
 
-**v1.3.8:** a faster title screen, and the stick chooses the difficulty (left / right) and the arena (up / down).
+**v1.3.9:** calibrated for a standard Vectrex out of the box: the ship closes and the small text stands straight.
 
 On a real Vectrex the ROM needs a cartridge with a 64 KB EPROM banked by PB6, or a flash cartridge that supports
 it. Saves need the optional DS2431 chip; without it the game runs the same, without saves.
