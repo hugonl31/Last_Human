@@ -29,17 +29,18 @@ happens to you.
 
 ## Download
 
-**[Last Human v1.4.0](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
+**[Last Human v1.5.0](https://github.com/hugonl31/Last_Human/releases/latest)**: the 64 KB cartridge ROM
 (`Last_Human.bin`), the screen overlay (`Last_Human_overlay.png`) and the UVMC2 edition (`Last_Human_UVMC2.um2`,
-see [below](#uvmc2-edition)). To try it right away, the release also has
-[Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU) for Windows, macOS and Linux, with Last Human and its overlay
-already in it.
+see [below](#uvmc2-edition)). To try it right away,
+[Vectrex_EMU](https://github.com/hugonl31/Vectrex_EMU/releases/latest) (v1.6.8 or newer) for Windows, macOS and Linux
+has both editions of Last Human and its overlay already in it.
 
-**New in v1.4.0:** both editions start at ZERO REF +03 and TEXT +00, the values a zero-reference test cartridge drew
-sharpest on a real Vectrex. Your own console may want a step either way on the CALIBRATION screen (button 1 on the
-title): up / down ZERO REF, left / right TEXT.
+**New in v1.5.0:** rapid fire and triple shot now stack, shield bots turn slower so you can get round them,
+centipedes wait in the start cages, boss life bars in Arena 2, an infinite-lives marker, and a fix for the picture
+shifting when many shots were out.
 
-**v1.3.9:** calibrated for a standard Vectrex out of the box: the ship closes and the small text stands straight.
+**v1.4.0:** both editions start at ZERO REF +03 and TEXT +00, the values a zero-reference test cartridge drew
+sharpest on a real Vectrex.
 
 On a real Vectrex the ROM needs a cartridge with a 64 KB EPROM banked by PB6, or a flash cartridge that supports
 it. Saves need the optional DS2431 chip; without it the game runs the same, without saves.
@@ -261,7 +262,7 @@ MEDIUM / HARD. Anything that takes more than one hit flashes when struck and is 
 
 ### Arena 1
 
-<p><img src="img/sketch/player.svg" width="260" align="left"><img src="img/screen/player.svg" width="130" align="right"><b>The fighter.</b> Fires in 8 directions: shots fly at 6 px a frame for 45 frames, at most 8 at a time. After a lost ship it returns with 2.4 s of safety, and robots near the start point are moved away.</p><br clear="all">
+<p><img src="img/sketch/player.svg" width="260" align="left"><img src="img/screen/player.svg" width="130" align="right"><b>The fighter.</b> Fires in 8 directions: shots fly at 6 px a frame for 45 frames, at most 16 at a time. After a lost ship it returns with 2.4 s of safety, and robots near the start point are moved away.</p><br clear="all">
 
 <p><img src="img/sketch/human.svg" width="260" align="left"><img src="img/screen/human.svg" width="130" align="right"><b>Humans</b> wander at about 12 px a second and change direction every second or so.</p><br clear="all">
 
@@ -295,17 +296,17 @@ MEDIUM / HARD. Anything that takes more than one hit flashes when struck and is 
 
 <p><img src="img/sketch/splitter.svg" width="260" align="left"><img src="img/screen/splitter.svg" width="130" align="right"><b>Splitter</b> · 150, shards 50 (EASY). Weaves toward you. Shot, it bursts into two shards that fly off sideways, turn, and home in one 45° step at a time.</p><br clear="all">
 
-<p><img src="img/sketch/shieldbot.svg" width="260" align="left"><img src="img/screen/shieldbot.svg" width="130" align="right"><b>Shield bot</b> · 300 / 450 / 600. Swings its shield toward you every 0.6 s. Anything within 45° of head-on bounces off; one shot in the flank kills it.</p><br clear="all">
+<p><img src="img/sketch/shieldbot.svg" width="260" align="left"><img src="img/screen/shieldbot.svg" width="130" align="right"><b>Shield bot</b> · 300 / 450 / 600. Turns its shield a quarter toward you about once a second. The whole front half bounces shots off; one shot from behind kills it.</p><br clear="all">
 
-<p><img src="img/sketch/phaser.svg" width="260" align="left"><img src="img/screen/phaser.svg" width="130" align="right"><b>Phaser</b> · 250 / 400 / 500. Solid for 1.5-2 s, fires one led shot, then <b>phases out and reappears 64 px from you</b> - harmless and untouchable while it materialises.</p><br clear="all">
+<p><img src="img/sketch/phaser.svg" width="260" align="left"><img src="img/screen/phaser.svg" width="130" align="right"><b>Phaser</b> · 250 / 400 / 500. Solid for 0.7-1 s, fires one led shot, then <b>phases out and reappears 64 px from you</b> - harmless and untouchable while it materialises.</p><br clear="all">
 
 <p><img src="img/sketch/sniper.svg" width="260" align="left"><img src="img/screen/sniper.svg" width="130" align="right"><b>Sniper</b> · 200 / 300 / 400. Takes up a position, locks an aiming line on you and fires down it a second later at 7 px a frame. It never re-aims: one step aside is enough, if you see it coming.</p><br clear="all">
 
-<p><img src="img/sketch/orbiter.svg" width="260" align="left"><img src="img/screen/orbiter.svg" width="130" align="right"><b>Orbiter</b> · 200 / 300 / 400. Circles you once every 2.6 s on an orbit that breathes between 64 and 22 px. It never fires. It only has to touch you.</p><br clear="all">
+<p><img src="img/sketch/orbiter.svg" width="260" align="left"><img src="img/screen/orbiter.svg" width="130" align="right"><b>Orbiter</b> · 200 / 300 / 400. Circles you once every 3.2 s on an orbit that breathes between 64 and 22 px. It never fires. It only has to touch you.</p><br clear="all">
 
 <p><img src="img/sketch/fence.svg" width="260" align="left"><img src="img/screen/fence.svg" width="130" align="right"><b>Laser fence</b> · 200 / 300 / 400. Two posts and a lethal beam: on for 2.6 s, off for 1.4 s, flickering just before it fires. Some sweep across the arena. Shoot a post to break it.</p><br clear="all">
 
-<p><img src="img/sketch/centipede.svg" width="260" align="left"><img src="img/screen/centipede.svg" width="130" align="right"><b>Centipede</b> · 100 / 150 / 200 a segment. A head and up to 8 segments, each 7 px behind the one ahead. Hit one in the middle and the segment behind it becomes a new head: <b>two centipedes</b>.</p><br clear="all">
+<p><img src="img/sketch/centipede.svg" width="260" align="left"><img src="img/screen/centipede.svg" width="130" align="right"><b>Centipede</b> · 100 / 150 / 200 a segment. A head and up to 8 segments, each 7 px behind the one ahead. Hit one in the middle and the segment behind it becomes a new head that breaks away sideways: <b>two centipedes</b>. Each one waits in its own start cage.</p><br clear="all">
 
 **Power cells:** every 15th robot destroyed in Arena 2 drops a cell that lasts 8 s - **rapid fire** (double rate,
 10 s), **triple shot** (two extra shots at ±45°, 10 s) or a **shield** that takes one hit. Active powers show as cards
